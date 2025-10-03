@@ -11,7 +11,7 @@ This repo will take you from raw Google satellite embeddings to actionable insig
 
 Demonstrates unsupervised classification of satellite embeddings
 
-![alt text](https://github.com/milos-agathon/google-satellite-embeddings-python/blob/main/clusters_k3k5k10.png?raw=true)
+![alt text](https://github.com/milos-agathon/google-satellite-embeddings-python/blob/main/clusters_panel.png?raw=true)
 
 ## PART II: CHANGE DETECTION ANALYSIS
 
