@@ -76,7 +76,7 @@ If you use this package in your research, please cite:
 
 ## Credits
 
-Created with ☕ by **Milos Popovic** • [YouTube channel](https://www.youtube.com/@milos-makes-maps) – subscribe for more R + GIS tutorials.
+Created with ☕ by **Milos Popovic** • [YouTube channel](https://www.youtube.com/@milos-makes-maps) – subscribe for more GIS tutorials.
 
 ## Acknowledgments
 
