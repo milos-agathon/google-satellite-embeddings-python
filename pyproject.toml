@@ -1,0 +1,80 @@
+[build-system]
+requires = ["setuptools>=65.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "google-satellite-embeddings"
+version = "0.1.0"
+description = "Python package for satellite imagery analysis using Google Earth Engine embeddings"
+readme = "README.md"
+authors = [
+    {name = "Milos Popovic", email = "milos@example.com"}
+]
+license = {text = "MIT"}
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Scientific/Engineering :: GIS",
+]
+keywords = ["satellite", "earth-engine", "clustering", "change-detection", "remote-sensing"]
+requires-python = ">=3.8"
+dependencies = [
+    "earthengine-api>=0.1.300",
+    "geemap>=0.20.0",
+    "folium>=0.14.0",
+    "rasterio>=1.3.0",
+    "numpy>=1.20.0",
+    "matplotlib>=3.5.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "pytest-cov>=4.0.0",
+    "black>=23.0.0",
+    "isort>=5.12.0",
+    "flake8>=6.0.0",
+    "mypy>=1.0.0",
+]
+docs = [
+    "sphinx>=5.0.0",
+    "sphinx-rtd-theme>=1.2.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/milos-agathon/google-satellite-embeddings-python"
+Documentation = "https://github.com/milos-agathon/google-satellite-embeddings-python"
+Repository = "https://github.com/milos-agathon/google-satellite-embeddings-python"
+"Bug Tracker" = "https://github.com/milos-agathon/google-satellite-embeddings-python/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+google_satellite_embeddings = ["py.typed"]
+
+[tool.black]
+line-length = 100
+target-version = ["py38", "py39", "py310", "py311"]
+
+[tool.isort]
+profile = "black"
+line_length = 100
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]
+
+[tool.mypy]
+python_version = "3.8"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = false
